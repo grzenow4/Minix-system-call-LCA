@@ -20,3 +20,7 @@ Funkcja `pid_t getlcapid(pid_t pid_1, pid_t pid_2)` przekazuje w wyniku identyfi
 Jeśli któryś z procesów o identyfikatorach `pid_1` lub `pid_2` nie jest aktualnie działającym procesem, funkcja przekazuje w wyniku -1 i ustawia `errno` na `EINVAL`.
 
 Jeśli dla danych procesów o identyfikatorach `pid_1` i `pid_2` nie istnieje dokładnie jeden najniższy wspólny przodek, funkcja przekazuje w wyniku -1 i ustawia `errno` na `ESRCH`.
+
+## Uwagi
+- folder `/minix_source/usr`  zawiera zmiany, jakie nanosi łatka `getlcapid.patch` na oryginalny kod minixa,
+- aby nanieść zmiany, należy wywołać komendę `make && make install` w folderach `/usr/src/minix/servers/pm` oraz `/usr/src/lib/libc`, `make do-hdboot` w folderze `/usr/src/releasetools`, a następnie `reboot`.
