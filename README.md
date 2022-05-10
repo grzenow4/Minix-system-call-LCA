@@ -23,4 +23,4 @@ Jeśli dla danych procesów o identyfikatorach `pid_1` i `pid_2` nie istnieje do
 
 ## Uwagi
 - folder `/minix_source/usr`  zawiera zmiany, jakie nanosi łatka `getlcapid.patch` na oryginalny kod minixa,
-- aby nanieść zmiany, należy wywołać komendę `make && make install` w folderach `/usr/src/minix/servers/pm` oraz `/usr/src/lib/libc`, `make do-hdboot` w folderze `/usr/src/releasetools`, a następnie `reboot`.
+- aby zatwierdzić zmiany, należy wywołać komendy: `make && make install` w folderach `/usr/src/minix/servers/pm` oraz `/usr/src/lib/libc`, `make do-hdboot` w folderze `/usr/src/releasetools`, a następnie `reboot`.
